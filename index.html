@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Project Website</title>
+    <link
+      rel="icon"
+      type="images/favicon-32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="mobile-logo">
+        <img src="images/logo.svg" alt="logo-img" />
+      </div>
+      <div class="desktop-nav">
+        <div class="logo"><img src="images/logo.svg" alt="logo-img" /></div>
+        <div class="nav-info">
+          <button class="features-btn">
+            <h1>
+              Features
+              <span
+                ><img
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+                  class="arrow-up-features"
+              /></span>
+            </h1>
+          </button>
+          <section class="f-lists hidden">
+            <div>
+              <img src="images/icon-todo.svg" alt="" /> <span>Todo list</span>
+            </div>
+            <div>
+              <img src="images/icon-calendar.svg" alt="" />
+              <span>Calendar</span>
+            </div>
+            <div>
+              <img src="images/icon-reminders.svg" alt="" />
+              <span>Reminders</span>
+            </div>
+            <div>
+              <img src="images/icon-planning.svg" alt="" />
+              <span>Planning</span>
+            </div>
+          </section>
+
+          <button class="company-btn">
+            <h1>
+              Company
+              <span
+                ><img
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+                  class="arrow-up-company"
+              /></span>
+            </h1>
+          </button>
+          <section class="lists hidden">
+            <h2>History</h2>
+            <h2>Our Team</h2>
+            <h2>Blogs</h2>
+          </section>
+
+          <div class="others">
+            <button>
+              <h1>Careers</h1>
+            </button>
+            <button>
+              <h1>About</h1>
+            </button>
+          </div>
+        </div>
+        <div class="registration">
+          <h2>Login</h2>
+          <button class="register">Register</button>
+        </div>
+      </div>
+
+      <div class="menu-logo">
+        <button class="open-menu">
+          <img src="images/icon-menu.svg" alt="menu-logo" />
+        </button>
+      </div>
+    </nav>
+    <div class="overlay hidden"></div>
+    <section class="menu">
+      <button class="close-menu">
+        <img src="images/icon-close-menu.svg" alt="" />
+      </button>
+      <div class="nav-content">
+        <div class="features">
+          <button class="features-btn">
+            <h1>
+              Features
+              <span
+                ><img
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+                  class="arrow-up-features"
+              /></span>
+            </h1>
+          </button>
+        </div>
+
+        <section class="hidden f-lists">
+          <div>
+            <img src="images/icon-todo.svg" alt="" /> <span>Todo list</span>
+          </div>
+          <div>
+            <img src="images/icon-calendar.svg" alt="" />
+            <span>Calendar</span>
+          </div>
+          <div>
+            <img src="images/icon-reminders.svg" alt="" />
+            <span>Reminders</span>
+          </div>
+          <div>
+            <img src="images/icon-planning.svg" alt="" />
+            <span>Planning</span>
+          </div>
+        </section>
+
+        <div class="company">
+          <button class="company-btn">
+            <h1>
+              Company
+              <span
+                ><img
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+                  class="arrow-up-company"
+              /></span>
+            </h1>
+          </button>
+
+          <section class="hidden lists">
+            <h2>History</h2>
+            <h2>Our Team</h2>
+            <h2>Blogs</h2>
+          </section>
+        </div>
+        <h1>Careers</h1>
+        <h1>About</h1>
+        <div class="registration">
+          <h2>Login</h2>
+          <button class="register">Register</button>
+        </div>
+      </div>
+    </section>
+    <header>
+      <div class="hero-mobile">
+        <img src="images/image-hero-mobile.png" alt="" />
+      </div>
+      <div class="hero-desktop">
+        <img src="images/image-hero-desktop.png" alt="" />
+      </div>
+      <section>
+        <div class="site-info">
+          <h1 class="hidden">Make <br />remote work</h1>
+          <h1 class="hide">Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+        </div>
+        <div class="site-ads">
+          <button>Learn more</button>
+          <aside>
+            <img src="images/client-audiophile.svg" alt="" />
+            <img src="images/client-meet.svg" alt="" />
+            <img src="images/client-maker.svg" alt="" />
+            <img src="images/client-databiz.svg" alt="" />
+          </aside>
+        </div>
+      </section>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,404 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Epilogue;
+}
+.hidden {
+  display: none;
+}
+nav {
+  display: flex;
+  margin: 15px;
+  justify-content: space-between;
+}
+.desktop-nav {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  background: hsl(0, 0%, 99%);
+  color: hsl(0, 0%, 41%);
+  display: none;
+  z-index: 5;
+}
+.open-menu {
+  background: transparent;
+  border: none;
+}
+.close-menu {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  background: transparent;
+  border: none;
+}
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+}
+.nav-content h1 {
+  font-size: 1.5rem;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.features-btn {
+  background: transparent;
+  border: none;
+  color: hsl(0, 0%, 41%);
+}
+.company-btn {
+  background: transparent;
+  border: none;
+  color: hsl(0, 0%, 41%);
+}
+
+.company-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin-left: 30px;
+}
+.features h1 {
+  font-size: 1.5rem;
+}
+.company h1 {
+  font-size: 1.5rem;
+}
+.features span img {
+  margin-left: 10px;
+  height: 10px;
+}
+.company span img {
+  margin-left: 10px;
+  height: 10px;
+}
+.features section div img {
+  margin-right: 10px;
+  height: 25px;
+}
+.features-list span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.company-list h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.registration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.registration h2 {
+  font-size: 1.3rem;
+}
+.registration button {
+  width: 80%;
+  padding: 15px 15px;
+  border-radius: 15px;
+  border: 1px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  background: transparent;
+  font-size: 1.3rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  overflow: hidden;
+}
+.hero-mobile img {
+  height: 380px;
+  width: 380px;
+  margin-block: 20px;
+}
+.hero-desktop {
+  display: none;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.site-info {
+  text-align: center;
+  padding-inline: 15px;
+}
+.site-info h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+.site-info p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: hsl(0, 0%, 41%);
+}
+.site-ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 30px;
+}
+.site-ads button {
+  width: 50%;
+  padding: 20px 15px;
+  border-radius: 15px;
+  border: none;
+  color: hsl(0, 0%, 98%);
+  background: hsl(0, 0%, 8%);
+  font-size: 1.3rem;
+}
+.site-ads aside {
+  margin-block: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  overflow: hidden;
+}
+aside img {
+  width: 80px;
+  height: 30px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .menu {
+    display: none;
+    right: -1000px;
+  }
+  .overlay {
+    display: none;
+    width: 0%;
+  }
+  .close-menu {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    color: hsl(0, 0%, 41%);
+  }
+  .mobile-logo {
+    display: none;
+  }
+  .mobile-features-list {
+    position: absolute;
+    background: hsl(0, 0%, 99%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    top: 40px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .mobile-features-list img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  .mobile-features-list span {
+    font-size: 1.8rem;
+    margin-left: 10px;
+  }
+  .mobile-company-list {
+    position: absolute;
+    background: hsl(0, 0%, 99%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    top: 40px;
+    left: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .nav-info {
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+  }
+  .nav-info button:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  .features-btn,
+  .company-btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .features-btn span img,
+  .company-btn span img {
+    margin-left: 10px;
+    height: 10px;
+  }
+  .others {
+    display: flex;
+    gap: 15px;
+    color: hsl(0, 0%, 41%);
+    font-size: 1.2rem;
+  }
+  .others button {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 41%);
+    font-weight: 600;
+  }
+  .open-menu {
+    background: transparent;
+    border: none;
+    display: none;
+  }
+
+  .registration {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+  .registration h2 {
+    color: hsl(0, 0%, 41%);
+    font-weight: 600;
+  }
+  .registration h2:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  .registration button {
+    width: 80%;
+    padding: 15px 15px;
+    border-radius: 15px;
+    border: 2px solid hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    background: transparent;
+    font-size: 1.3rem;
+  }
+  .registration button:hover {
+    color: hsl(0, 0%, 8%);
+    border: hsl(0, 0%, 8%), 2px, solid;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 200px 50px;
+    gap: 50px;
+    overflow: hidden;
+  }
+  .hero-mobile img {
+    display: none;
+  }
+  .hero-desktop {
+    display: block;
+  }
+  .hero-desktop img {
+    height: 600px;
+  }
+  .site-info {
+    text-align: start;
+    padding-inline: 30px;
+  }
+  .site-info .hidden {
+    display: block;
+  }
+  .site-info .hide {
+    display: none;
+  }
+  .site-info h1 {
+    font-size: 5rem;
+    margin-bottom: 15px;
+  }
+  .site-info p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: hsl(0, 0%, 41%);
+  }
+  .site-ads {
+    display: flex;
+    flex-direction: column;
+    margin-block: 80px;
+  }
+  .site-ads button {
+    width: 50%;
+    padding: 20px 15px;
+    border-radius: 15px;
+    border: none;
+    color: hsl(0, 0%, 98%);
+    background: hsl(0, 0%, 8%);
+    font-size: 1.3rem;
+    align-self: self-start;
+    margin-left: -60px;
+    margin-bottom: 30px;
+  }
+  .site-ads button:hover {
+    background: transparent;
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    font-size: 1.3rem;
+  }
+  .site-ads aside {
+    margin-block: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
+    margin-left: -80px;
+  }
+  aside img {
+    width: 100px;
+    height: 50px;
+  }
+}
